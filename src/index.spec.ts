@@ -7,6 +7,16 @@ describe('Fizz Buzz', () => {
     fizzBuzz = new FizzBuzz();
   });
 
+  test('when the number is not in range of 1-100 throw RangeError', () => {
+    const inputNumber = (num: number) => {
+      fizzBuzz.print(num);
+    };
+
+    expect(() => inputNumber(-1)).toThrow(RangeError);
+    expect(() => inputNumber(0)).toThrow(RangeError);
+    expect(() => inputNumber(101)).toThrow(RangeError);
+  });
+
   test('should print the number', () => {
     expect(fizzBuzz.print(1)).toEqual('1');
     expect(fizzBuzz.print(2)).toEqual('2');
