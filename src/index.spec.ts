@@ -16,4 +16,9 @@ describe('Fizz Buzz', () => {
     expect(fizzBuzz.print(3)).toEqual('Fizz');
     expect(fizzBuzz.print(6)).toEqual('Fizz');
   });
+
+  test('multiple of 5 should print "Buzz"', () => {
+    expect(fizzBuzz.print(5)).toEqual('Buzz');
+    expect(fizzBuzz.print(10)).toEqual('Buzz');
+  });
 });
