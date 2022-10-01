@@ -1,17 +1,11 @@
 export class FizzBuzz {
   print(num: number): string {
-    if (num % 3 === 0 && num % 5 === 0) {
-      return 'FizzBuzz';
-    }
+    let str = '';
 
-    if (num % 3 === 0) {
-      return 'Fizz';
-    }
+    if (num % 3 === 0) str += 'Fizz';
+    if (num % 5 === 0) str += 'Buzz';
+    if (str.length === 0) str += num.toString();
 
-    if (num % 5 === 0) {
-      return 'Buzz';
-    }
-
-    return num.toString();
+    return str;
   }
 }
