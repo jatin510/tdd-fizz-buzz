@@ -1,2 +1,5 @@
-// eslint-disable-next-line no-console
-console.log('Hello world!');
+export class FizzBuzz {
+  print(num: number): string {
+    return '1';
+  }
+}
