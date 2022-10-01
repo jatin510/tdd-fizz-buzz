@@ -21,4 +21,9 @@ describe('Fizz Buzz', () => {
     expect(fizzBuzz.print(5)).toEqual('Buzz');
     expect(fizzBuzz.print(10)).toEqual('Buzz');
   });
+
+  test('if number is multiple of 3 and 5 both, print "FIzzBuzz"', () => {
+    expect(fizzBuzz.print(15)).toEqual('FizzBuzz');
+    expect(fizzBuzz.print(30)).toEqual('FizzBuzz');
+  });
 });
